@@ -5,38 +5,4 @@
    
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
-  
-  
-  <servlet>
-    <servlet-name>LoginRegister</servlet-name>
-    <servlet-class>controller.LoginRegister</servlet-class>
-</servlet>
-<servlet-mapping>
-    <servlet-name>LoginRegister</servlet-name>
-    <url-pattern>/LoginRegister</url-pattern>  
-    <!-- This is the URL of the servlet. -->
-</servlet-mapping>
-
-  <servlet>
-    <servlet-name>GetInformation</servlet-name>
-    <servlet-class>controller.GetInformation</servlet-class>
-</servlet>
-<servlet-mapping>
-    <servlet-name>GetInformation</servlet-name>
-    <url-pattern>/GetInformation</url-pattern>  
-    <!-- This is the URL of the servlet. -->
-</servlet-mapping>
-
-
-  <servlet>
-    <servlet-name>GeneratePdf</servlet-name>
-    <servlet-class>controller.GeneratePdf</servlet-class>
-</servlet>
-<servlet-mapping>
-    <servlet-name>GeneratePdf</servlet-name>
-    <url-pattern>/GeneratePdf</url-pattern>  
-    <!-- This is the URL of the servlet. -->
-</servlet-mapping>
-
-
 </web-app>

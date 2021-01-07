@@ -18,5 +18,7 @@
 	<classpathentry kind="lib" path="C:/Users/Admin/OneDrive/Desktop/mysql-connector-java-5.1.49-bin.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Admin/OneDrive/Desktop/mysql-connector-java-8.0.22.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/apache-tomcat-8.5.61-windows-x64 (1).zip"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/OneDrive/Desktop/jaf-1_1_1.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/OneDrive/Desktop/javamail1_4_5.zip"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
