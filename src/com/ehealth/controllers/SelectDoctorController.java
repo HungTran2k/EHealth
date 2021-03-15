@@ -49,8 +49,7 @@ public class SelectDoctorController extends HttpServlet {
 		
 	 public void sendPlainTextEmail(String host, String port,
 	            final String userName, final String password, String toAddress,
-	            String subject, String message) throws AddressException,
-	            MessagingException {
+	            String subject, String message) throws AddressException, MessagingException {
 	 
 	        // sets SMTP server properties
 	        Properties properties = new Properties();
@@ -110,12 +109,17 @@ public class SelectDoctorController extends HttpServlet {
 		 // sets SMTP server properties
 		String host = "smtp.gmail.com";
         String port = "587";
-        String mailFrom = "yourEmailAddress"; //your email address
-        String password = "yourEmailPassword"; //your password
+        String mailFrom = "14347@student.vgu.edu.vn"; //your email address
+        String password = "%kEBgGG2"; //your password
  
         // outgoing message information
-        Cookie c[] = request.getCookies();
-        String mailTo = c[2].getValue(); // this is the email from cookies
+       // RequestDispatcher rd=request.getRequestDispatcher("register");  
+        //rd.include(request, response);  
+        
+        //Cookie c[] = request.getCookies();
+       String mailTo = "tranvanhunglk@gmail.com"; // this is the email from cookies
+      
+       // String mailTo = request.getParameter("email");
         String subject = "Appointment Confirmation";
         String message = "This is a confirmation email that you have made an appointment with doctor: " + doctor.getFirstName() + doctor.getLastName() + " in: " + doctor.getAddress();
        

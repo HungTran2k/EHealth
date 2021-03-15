@@ -49,8 +49,11 @@ public class GeneratePdf extends HttpServlet {
 		// get username and password from cookies
 		
 		Cookie c[] = request.getCookies();
-		String username = c[0].getValue();
+	String username = c[0].getValue();
 		String password = c[1].getValue();
+		
+		//String username = request.getParameter("username");
+		//String password = request.getParameter("password");
 		
 		UserDAO userDAO = new UserDAOImpl();
 		User user = userDAO.getUserFromDB(username, password);
